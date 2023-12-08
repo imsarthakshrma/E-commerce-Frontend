@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,800&family=Poppins:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Poppins:wght@200;300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 2%;
+    background-color: rgba(255, 255, 255, 0.897);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.253);
+    backdrop-filter: blur;
+}
+
+a{
+    font-size: 32px;
+    color: black;
+    font-weight: 600;
+    word-spacing: 5px;
+    
+}
+
+a.inlogo{
+    font-size: 32px;
+    color:rgb(90, 21, 155);
+    letter-spacing: 1.882px;
+}
+
+.nav{
+    display:flex;
+    
+}
+
+.nav a{
+    display: inline-block;
+    color: rgb(82, 82, 82);
+    font-size: 17px;
+    padding: 5px 20px;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    border-top: 5px solid transparent;
+    transition: 0.3 ease;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav a:hover{
+    color: rgb(49, 122, 218);
+    border-bottom: 2px solid rgb(49, 122, 218);
+    transition: 0.5s ease-in-out;
+}
+
+.christmas a{
+    font-family: 'Mountains of Christmas', serif;
+    font-style: bold;
+    font-weight: 700;
+}
+
+.christmas a:hover{
+    color: red;
+    border-bottom: 2px solid red;
+    transition: 0.5s ease-in-out;
+}
+
+.nav-icon{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.nav-icon i{
+    color: rgb(82, 82, 82);
+    font-size: 25px;
+    transition: 0.3s ease;
+}
+
+.nav-icon i:hover{
+    color: rgb(49, 122, 218);
+    transform: scale(1.1);
+}
+
+#menu-icon{
+    font-size: 30px;
+    color: rgb(82, 82, 82);
+    z-index: 1001;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#menu-icon:hover{
+    transform: rotate(180deg);
+    color: rgb(82, 82, 82);
+    transition: 0.5s ease-in-out;
+    zoom: initial;
+}
+
+section{
+    padding: 5% 10%;
+}
+
+.main-home{
+    position: relative;
+    width: 100%;
+    margin-top: 2.3%;
+    height: 90vh;
+    overflow: hidden;
+    background-color: whitesmoke;
+    z-index: 10;
+}
+.main-home::before{
+    content: "";
+    position: absolute;
+    top: 250px;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    background: url(Banner.png);
+    background-size: contain;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 20%, 100%);
+    transform: scale(1.8);
+    z-index:-5px;
+
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 255, 255, 0.897);
+}
+::-webkit-scrollbar-track{
+    background-color: black;
+    width: 50px;
+}
+.main-texr{
+    margin-top: 70px;
+    z-index: 1;
+}
+.main-text h5{
+    color: rgb(51, 51, 51);
+    font-size: 25px;
+    font-weight: 500;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.main-text h1{
+    color:rgb(192, 131, 52);
+    font-size: 60px;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0 10px;
+    text-shadow: 5px 1px 1px rgba(24, 23, 23, 0.144) ;
+    position: relative;
+}
+
+.main-text p{
+    color: rgb(54, 54, 54);
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 70px;
+    text-transform: uppercase;
+    font-weight: 600;   
+}
+.main-btn{
+    display: inline-block;
+    color: #111;
+    font-size: 20px;
+    font-weight: 500;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 12px 30px;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+}
+.main-btn{
+    font-size: 20px;
+    margin-left: 5px;
+    vertical-align: middle;
+    font-weight: bold;
+}
+.main-btn:hover{
+    background-color: rgb(192, 131, 52);
+    color: rgb(255, 255, 255);
+    z-index: 1500;
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+.down{
+    position: absolute;
+    top: 70%;
+    left: 20%;
+}
+.down-arrow i{
+    font-size: 36px;
+    color: black;
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 15px 20px;
+    transition: 0.3s ease-in-out;
+}
+.down-arrow i:hover{
+    color: rgb(255, 255, 255);
+    background: rgb(192, 131, 52);
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
+.row #star{
+    color:rgb(255, 191,0);
+}
+
+.center-text h2{
+    color: black;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 2rem;
+    margin-bottom: 5em;
+}
+
+.row {
+    position: relative;
+    transition: all .4s;
+    border: 3px solid rgb(239, 239, 239);
+    padding: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.row img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.row:hover{
+    transform: scale(1.03);
+}
+
+.row #heart{
+    color: black;
+    position: absolute;
+    right: 20px;
+    font-size: 24px;
+    transition: all 0.3s ease;
+}
+
+.row #heart:hover{
+    color: red;
+    text-shadow:0 0 10px red;
+}
+
+header.sticky{
+    transition: all 0.3 ease-in-out;
+    border-bottom: 1px solid rgba(24, 23, 23, 0.144);
+}

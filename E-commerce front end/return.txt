@@ -1,0 +1,29 @@
+    <div class="container">
+        <div class="banner" id="home">
+            <div class="container" id="content">
+                <p>Welcome To The Center Of all You Need. We have everything that you need. <Br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Br></p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 2%;
+    background-color: rgba(255, 255, 255, 0.897);
+    border-bottom: 2cap;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+
+
+<img src="logo2.png" width="150" alt="Infiniti Logo">
